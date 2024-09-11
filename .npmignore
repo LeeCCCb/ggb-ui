@@ -1,0 +1,11 @@
+# 发布到npm时需要忽略的文件夹
+examples/
+packages/
+public/
+
+# 指定忽略的文件
+vue.config.js
+babel.congfig.js
+jsconfig.json
+*.map
+.gitignore
