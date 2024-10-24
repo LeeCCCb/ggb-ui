@@ -1,0 +1,157 @@
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.text-one {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-two {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.text-three {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@for $i from 0 through 40 {
+  $item: 1px * $i;
+  $index: $i * 1;
+  .fs-#{$index} {
+    font-size: $item;
+  }
+}
+
+@for $i from 0 through 40 {
+  $item: 1px * $i;
+  $index: $i * 1;
+  .lh-#{$index} {
+    line-height: $item;
+  }
+}
+
+@for $i from 0 through 60 {
+  $item: 1px * $i;
+  $index: $i * 1;
+  .pt-#{$index} {
+    padding-top: $item;
+  }
+  .pb-#{$index} {
+    padding-bottom: $item;
+  }
+  .pr-#{$index} {
+    padding-right: $item;
+  }
+  .pl-#{$index} {
+    padding-left: $item;
+  }
+  .px-#{$index} {
+    padding-left: $item;
+    padding-right: $item;
+  }
+  .py-#{$index} {
+    padding-top: $item;
+    padding-bottom: $item;
+  }
+  .p-#{$index} {
+    padding: $item;
+  }
+}
+
+@for $i from 0 through 60 {
+  $item: 1px * $i;
+  $index: $i * 1;
+  .mt-#{$index} {
+    margin-top: $item;
+  }
+  .mb-#{$index} {
+    margin-bottom: $item;
+  }
+  .mr-#{$index} {
+    margin-right: $item;
+  }
+  .ml-#{$index} {
+    margin-left: $item;
+  }
+  .mx-#{$index} {
+    margin-left: $item;
+    margin-right: $item;
+  }
+  .my-#{$index} {
+    margin-top: $item;
+    margin-bottom: $item;
+  }
+  .m-#{$index} {
+    margin: $item;
+  }
+}
